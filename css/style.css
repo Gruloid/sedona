@@ -1,0 +1,192 @@
+/*fonts*/
+
+@font-face {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("PTSans-Bold"),
+       url("../fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../fonts/PTSans-Bold.woff") format("woff")
+}
+@font-face {
+  font-family: "PTSans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("PTSans"),
+       url("../fonts/PTSans.woff2") format("woff2"),
+       url("../fonts/PTSans.woff") format("woff")
+}
+
+/* Varibals*/
+
+:root {
+  --page: #F2F2F2;
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basic-blue: #81B3D2;
+  --basic-light: #EEEEEE;
+  --basic-white: #ffffff;
+  --popup-and-visit: #766357;
+  --focus-brown: #604E43;
+  --click-brown: #503E33;
+  --focus-blue: #669EC0;
+  --click-blue: #5496BD;
+  --blocked: #6A6A6A;
+  --oval: #ABABAB;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 1200px;
+  padding: 0;
+  margin: 0;
+  font-family: "PTSans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-dark);
+  text-transform: uppercase;
+  background-color: var(--page);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* main navigation */
+
+.main-navigation {
+  font-family: "PTSans-Bold";
+  line-height: 26px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.site-navigation  {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+/* Доделать, чтобы сылка становилась --popup-and-visit
+ .site-navigation a:visited {
+  color: var();
+} */
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--focus-blue);
+}
+
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: 30%;
+}
+
+/* welcome */
+
+.welcome {
+  background-color: var(--basic-blue);
+  background-image: url("../img/background_welcome.jpg");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.welcome h2 {
+  font-family: "PTSans-Bold";
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+/* features */
+
+.features-list {
+  list-style: none;
+}
+
+.recommendations-list {
+  list-style: none;
+  background-color: var(--basic-white);
+}
+
+.recommendations h3 {
+  font-family: "PTSans-Bold";
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.features-item h3 {
+  font-family: "PTSans-Bold";
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.item-photo {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.item {
+  background-color: var(--basic-light);
+}
+
+/* search form */
+
+.search-link {
+  font-family: "PTSans-Bold";
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--popup-and-visit);
+}
+
+/* map */
+
+/* .map {
+  background-image: url("../img/map.png");
+} */
+
+/* Footer */
+.footer-contacts {
+  font-family: "PTSans-Bold";
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-contacts a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.social-bootom {
+  background-color: var(--basic-blue);
+}
+/* 
+.copyright-logo svg:hover {
+  fill: red;
+} */
