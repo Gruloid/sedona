@@ -33,6 +33,7 @@
   --click-blue: #5496BD;
   --blocked: #6A6A6A;
   --oval: #ABABAB;
+  --logo-active: #BDBBBC;
 }
 
 /* Global */
@@ -87,11 +88,6 @@ img {
 .site-navigation a {
   color: var(--basic-black);
 }
-
-/* Доделать, чтобы сылка становилась --popup-and-visit
- .site-navigation a:visited {
-  color: var();
-} */
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -186,7 +182,18 @@ img {
 .social-bootom {
   background-color: var(--basic-blue);
 }
-/* 
+
+.copyright-logo svg {
+  fill: var(--basic-black);
+  /* stroke: var(--basic-black); */
+}
+
 .copyright-logo svg:hover {
-  fill: red;
-} */
+  fill: var(--basic-blue);
+  /* stroke: var(--basic-blue); */
+} 
+
+.copyright-logo svg:active {
+  fill: var(--logo-active);
+}
+
