@@ -39,7 +39,7 @@
 /* Global */
 
 .page-body {
-  min-width: 1200px;
+ /* min-width: 1200px;*/
   padding: 0;
   margin: 0;
   font-family: "PTSans", sans-serif;
@@ -49,6 +49,10 @@
   color: var(--basic-dark);
   text-transform: uppercase;
   background-color: var(--page);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .visually-hidden {
@@ -71,8 +75,19 @@ a {
 img {
   max-width: 100%;
 }
+ /* Grid */ 
+ .page{
+   height: 100%;
+ }
+/* Main Header */
+.main-header {
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
 
 /* main navigation */
+
 
 .main-navigation {
   font-family: "PTSans-Bold";
@@ -98,6 +113,13 @@ img {
   color: var(--basic-black);
   opacity: 30%;
 }
+ /* Container */
+ .container{
+ width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+ }
 
 /* welcome */
 
@@ -119,11 +141,15 @@ img {
 
 .features-list {
   list-style: none;
+  display: grid;
+  
 }
 
 .recommendations-list {
   list-style: none;
   background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .recommendations h3 {
@@ -164,6 +190,11 @@ img {
 } */
 
 /* Footer */
+.main-footer{
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
 .footer-contacts {
   font-family: "PTSans-Bold";
   font-size: 21px;
