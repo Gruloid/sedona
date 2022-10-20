@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400; // может быть не указано при таком неправильном способе
+  font-style: normal;
+  src: local("PT Sans"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Sans Bold"; // указали насыщенность прямо в семействе
+  font-weight: 700; // может быть не указано при таком неправильном способе
+  font-style: normal;
+  src: local("PT Sans Bold"),
+       url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+}

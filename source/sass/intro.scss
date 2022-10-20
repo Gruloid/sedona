@@ -1,0 +1,23 @@
+.intro {
+  &__img {
+    width: 320px;
+    height: 389px;
+    background-image: url("../img/back-mobile.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    background-color: #fff;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__description {
+    line-height: 26px;
+  }
+}
