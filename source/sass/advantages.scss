@@ -1,26 +1,33 @@
 .advantages {
-}
-.visually-hidden {
-}
-.intro {
-}
-.intro__img {
-}
-.intro__text {
-}
-.intro__title {
-}
-.intro__description {
-}
-.advantages__wrapper {
-}
-.advantages__list {
-}
-.advantages__item {
-}
-.advantages__title {
-}
-.advantages__text {
-}
-.advantages__img {
+  outline: 2px solid red;
+
+  &__wrapper {}
+
+  &__list {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  &__item {
+    text-align: center;
+
+    &--primary {
+      background-color: #81B3D2;
+      color: #ffffff;
+    }
+
+    &--secondary {
+      background-color: #EEEEEE;
+    }
+  }
+
+  &__title {
+    margin: 0px;
+  }
+
+  &__text {
+    margin: 0px;
+  }
+
+  &__img {}
 }

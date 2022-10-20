@@ -1,18 +1,33 @@
 .city-servises {
-}
-.city-servises__wrapper {
-}
-.city-servises__list {
-}
-.city-servises__item {
-}
-.city-servises__item--motel {
-}
-.city-servises__title {
-}
-.city-servises__description {
-}
-.city-servises__item--souvenirs {
-}
-.city-servises__item--food {
+  outline: 5px solid red;
+
+  &__wrapper {}
+
+  &__list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  &__item {
+    background-color: #FFFFFF;
+
+    &--motel {}
+
+    &--souvenirs {}
+
+    &--food {}
+  }
+
+  &__title {
+    margin: 0px;
+    color: #000000;
+  }
+
+  &__description {
+    margin: 0px;
+    color: #333333
+  }
+
+
 }

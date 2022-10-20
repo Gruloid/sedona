@@ -1,14 +1,20 @@
 .intro {
-  &__img {
+  outline: 5px solid red;
+  &__wrapper {
     width: 320px;
     height: 389px;
+    background-color: aqua;
     background-image: url("../img/back-mobile.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    text-align: center;
   }
-
+  &__img {
+    margin-top: 90px;
+  }
   &__text {
-    background-color: #fff;
+    text-align: center;
+    background-color: #ffffff;
   }
 
   &__title {
