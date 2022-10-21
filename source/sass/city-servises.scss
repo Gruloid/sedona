@@ -1,33 +1,30 @@
 .city-servises {
-  outline: 5px solid red;
+  outline: 2px solid green;
 }
-  .city-servises__wrapper {}
 
-  .city-servises__list {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-  }
+.city-servises__wrapper {}
 
-  .city-servises__item {
-    background-color: #FFFFFF;
+.city-servises__list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
 
-    &--motel {}
+.city-servises__item {
+  background-color: #ffffff;
+  &--motel {}
 
-    &--souvenirs {}
+  &--souvenirs {}
 
-    &--food {}
-  }
+  &--food {}
+}
 
-  .city-servises__title {
-    margin: 0px;
-    color: #000000;
-  }
+.city-servises__title {
+  margin: 0px;
+  color: #000000;
+}
 
-  .city-servises__description {
-    margin: 0px;
-    color: #333333
-  }
-
-
-
+.city-servises__description {
+  margin: 0px;
+  color: #333333
+}

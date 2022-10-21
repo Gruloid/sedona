@@ -1,29 +1,34 @@
 .intro {
-  outline: 5px solid red;
-  .intro__wrapper {
-    width: 320px;
-    height: 389px;
-    background-color: aqua;
-    background-image: url("../img/back-mobile.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
-  .intro__img {
-    margin-top: 90px;
-  }
-  .intro__text {
-    text-align: center;
-    background-color: #ffffff;
-  }
+  outline: 2px solid fuchsia;
+}
 
-  .intro__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-  }
+.intro__wrapper {
+  width: 320px;
+  height: 389px;
+  background-color: aqua;
+  background-image: url("../img/back-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-align: center;
+}
 
-  .intro__description {
-    line-height: 26px;
-  }
+.intro__img {
+  margin-top: 90px;
+}
+
+.intro__text {
+  text-align: center;
+  background-color: #ffffff;
+}
+.intro__title {
+  margin-top: 32px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.intro__description {
+  margin-top: 32px;
+  margin-bottom: 17px;
+  line-height: 26px;
 }

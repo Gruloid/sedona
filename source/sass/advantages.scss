@@ -11,15 +11,15 @@
 
 .advantages__item {
   text-align: center;
-
   &--primary {
     background-color: #81B3D2;
     color: #ffffff;
   }
 
   &--secondary {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
   }
+
 }
 
 .advantages__title {
@@ -29,5 +29,3 @@
 .advantages__text {
   margin: 0px;
 }
-
-&__img {}

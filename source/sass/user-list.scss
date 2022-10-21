@@ -5,17 +5,22 @@
 }
 
 .user-list__item {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
   text-align: center;
+  border: 1px solid #ffffff;
 
   &--current {
   }
 }
 
 .user-list__link {
+  display: block;
+
+  margin-top: 10px;
+  margin-bottom: 5px;
   color: #ffffff;
   text-decoration: none;
 }
