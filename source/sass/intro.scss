@@ -1,6 +1,6 @@
 .intro {
   outline: 5px solid red;
-  &__wrapper {
+  .intro__wrapper {
     width: 320px;
     height: 389px;
     background-color: aqua;
@@ -9,21 +9,21 @@
     background-repeat: no-repeat;
     text-align: center;
   }
-  &__img {
+  .intro__img {
     margin-top: 90px;
   }
-  &__text {
+  .intro__text {
     text-align: center;
     background-color: #ffffff;
   }
 
-  &__title {
+  .intro__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
   }
 
-  &__description {
+  .intro__description {
     line-height: 26px;
   }
 }

@@ -1,15 +1,15 @@
 .city-servises {
   outline: 5px solid red;
+}
+  .city-servises__wrapper {}
 
-  &__wrapper {}
-
-  &__list {
+  .city-servises__list {
     margin: 0px;
     padding: 0px;
     list-style: none;
   }
 
-  &__item {
+  .city-servises__item {
     background-color: #FFFFFF;
 
     &--motel {}
@@ -19,15 +19,15 @@
     &--food {}
   }
 
-  &__title {
+  .city-servises__title {
     margin: 0px;
     color: #000000;
   }
 
-  &__description {
+  .city-servises__description {
     margin: 0px;
     color: #333333
   }
 
 
-}
+

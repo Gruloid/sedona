@@ -2,18 +2,20 @@
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
 
-  &__item {
+.user-list__item {
   background-color: #81B3D2;
   font-weight: 700;
-font-size: 18px;
-line-height: 40px;
-text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+
+  &--current {
   }
+}
 
-  &__item--current {}
-
-  &__link {
-    color: #ffffff;
-  text-decoration: none;}
+.user-list__link {
+  color: #ffffff;
+  text-decoration: none;
 }
