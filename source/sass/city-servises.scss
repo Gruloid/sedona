@@ -1,8 +1,13 @@
 .city-servises {
   outline: 2px solid green;
+  background-color: #ffffff;
 }
 
-.city-servises__wrapper {}
+.city-servises__wrapper {
+position: relative;
+padding-top: 35px;
+padding-bottom: 35px;
+}
 
 .city-servises__list {
   margin: 0px;
@@ -11,8 +16,18 @@
 }
 
 .city-servises__item {
-  background-color: #ffffff;
-  &--motel {}
+
+  &--motel {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 39px;
+      height: 37px;
+      top: 0px;
+      left: 0px;
+      background-image: url("../img/icon-house.svg");
+    }
+  }
 
   &--souvenirs {}
 
@@ -20,11 +35,16 @@
 }
 
 .city-servises__title {
-  margin: 0px;
+
+  font-weight: 700;
+font-size: 18px;
+line-height: 26px;
   color: #000000;
 }
 
 .city-servises__description {
-  margin: 0px;
+
+  font-size: 14px;
+line-height: 21px;
   color: #333333
 }
