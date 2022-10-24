@@ -29,9 +29,27 @@ padding-bottom: 35px;
     }
   }
 
-  &--souvenirs {}
+  &--souvenirs {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 39px;
+      height: 37px;
+      top: 0px;
+      left: 0px;
+      background-image: url("../img/icon-house.svg");
+    }}
 
-  &--food {}
+  &--food {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 39px;
+      height: 37px;
+      top: 0px;
+      left: 0px;
+      background-image: url("../img/icon-house.svg");
+    }}
 }
 
 .city-servises__title {
