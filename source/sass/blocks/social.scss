@@ -1,14 +1,79 @@
 .social {
+  margin-bottom: 40px;
 }
+
 .social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
 }
+
 .social__item {
+  position: relative;
+  width: 46px;
+  height: 48px;
+  background-color: $blue;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+
+    .social__link--twitter,
+    .social__link--facebook,
+    .social__link--youtube {
+      opacity: 0.3;
+    }
+  }
 }
+
 .social__link {
-  &--twitter {
+
+
+  &--twitter::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("../../img/icon-twitter.svg");
   }
-  &--facebook {
+
+  &--facebook::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 19px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("../../img/icon-facebook.svg");
+
   }
-  &--youtube {
+
+  &--youtube::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 14px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("../../img/icon-youtube.svg");
   }
 }

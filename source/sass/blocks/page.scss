@@ -1,9 +1,18 @@
-.page__body {
-  font-family: 'PT Sans';
-  font-style: normal;
+.page{
+  height: 100%;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  width: 320px;
-  color: #333333;
-  background-color: #ffffff;
+  font-style: 14px;
+  line-height: 26px;
+}
+
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  color: $darkgrey;
+  background-color: $white;
+  text-transform: uppercase;
 }

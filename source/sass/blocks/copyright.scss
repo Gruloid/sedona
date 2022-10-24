@@ -1,8 +1,25 @@
-
 .copyright {
-  outline: 2px solid red;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
 }
+
 .copyright__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
 }
-.copyright__logo {
+
+.copyright__link {
+  margin-left: 12px;
+
+  &:hover path,
+  &:focus path {
+    fill: $blue;
+  }
+
+  &:active path {
+    fill: $black;
+    opacity: 0.3;
+  }
 }
