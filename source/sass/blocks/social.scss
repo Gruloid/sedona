@@ -35,8 +35,6 @@
 }
 
 .social__link {
-
-
   &--twitter::before {
     position: absolute;
     content: "";
@@ -61,7 +59,6 @@
     bottom: 0;
     margin: auto;
     background-image: url("../../img/icon-facebook.svg");
-
   }
 
   &--youtube::before {

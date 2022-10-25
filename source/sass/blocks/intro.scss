@@ -1,11 +1,9 @@
-.intro {
-  outline: 2px solid fuchsia;
-}
-
+// .intro {
+// }
 .intro__wrapper {
   width: 320px;
   height: 389px;
-  background-color: aqua;
+  background-color: $blue;
   background-image: url("../img/back-mobile.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -18,18 +16,20 @@
 
 .intro__text {
   text-align: center;
-  background-color: #ffffff;
+  background-color: $white;
 }
+
 .intro__title {
-  margin-top: 32px;
   margin-bottom: 0;
+  margin-top: 32px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
+
 .intro__description {
-  margin-top: 32px;
   margin-bottom: 0;
+  margin-top: 32px;
   padding-bottom: 17px;
   line-height: 26px;
 }

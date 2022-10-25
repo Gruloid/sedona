@@ -1,68 +1,60 @@
 .city-servises {
-  outline: 2px solid green;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .city-servises__wrapper {
-position: relative;
-padding-top: 35px;
-padding-bottom: 35px;
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .city-servises__list {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .city-servises__item {
-
-  &--motel {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 39px;
-      height: 37px;
-      top: 0px;
-      left: 0px;
-      background-image: url("../img/icon-house.svg");
-    }
+  &--motel::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon-house.svg");
   }
 
-  &--souvenirs {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 39px;
-      height: 37px;
-      top: 0px;
-      left: 0px;
-      background-image: url("../img/icon-house.svg");
-    }}
+  &--souvenirs::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon-house.svg");
+  }
 
-  &--food {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 39px;
-      height: 37px;
-      top: 0px;
-      left: 0px;
-      background-image: url("../img/icon-house.svg");
-    }}
+  &--food::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon-house.svg");
+  }
 }
 
 .city-servises__title {
-
   font-weight: 700;
-font-size: 18px;
-line-height: 26px;
-  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
 }
 
 .city-servises__description {
-
   font-size: 14px;
-line-height: 21px;
-  color: #333333
+  line-height: 21px;
+  color: $darkgrey;
 }
