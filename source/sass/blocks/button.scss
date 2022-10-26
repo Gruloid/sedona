@@ -1,2 +1,9 @@
-// .button {
-// }
+.button {
+  width: 280px;
+  display: inline-block;
+  background-color: $blue;
+  padding: 14px 32px 17px;
+  color: $white;
+  font-weight: 700;
+  font-size: 21px;
+}

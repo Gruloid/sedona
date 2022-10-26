@@ -11,69 +11,72 @@
 
 
 <body class="page__body">
-  <body class="page__body">
-
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="город Седона">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="photo.html">Фото и видео</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link user-list__item--current" href="#">Форма Отзыва</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logotype-mobile.svg" width="102" height="84" alt="город Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a class="user-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="user-list__item user-list__item--current">
+          <a class="user-list__link" href="#">Форма Отзыва</a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Оставить отзыв о городке Седона</h1>
-    <div class="intro">
-      <div class="intro__img">
-        <img src="img/text-index.svg" width="282" height="214" alt="Приветствие от города Седона">
+    <section class="intro">
+      <h1 class="visually-hidden">Оставить отзыв о городке Седона</h1>
+      <div class="intro__wrapper">
+        <div class="intro__logo">
+          <img src="img/text-index.svg" width="282" height="214" alt="Приветствие от города Седона">
+        </div>
+        <div class="intro__text">
+          <p class="intro__title">Оставьте свой отзыв</p>
+          <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+            вами
+            достопримечательностях</p>
+        </div>
       </div>
-      <div class="intro__text">
-        <p class="intro__title">Оставьте свой отзыв</p>
-        <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях</p>
-      </div>
-    </div>
+    </section>
     <section class="review">
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="review__wrapper form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="form__field author">
-          <legend >Представьтесь:</legend>
+          <legend>Представьтесь:</legend>
           <p class="author__item">
             <label class="author__name" for="author-firstname">Имя*:</label>
             <input class="author__input" id="author-firstname" type="text" name="firstname" placeholder="Петр" required>
           </p>
           <p class="author__item">
             <label class="author__name" for="author-lastname">Фамилия*:</label>
-            <input  class="author__input" id="author-lastname" type="text" name="lastname" placeholder="Иванов" required>
+            <input class="author__input" id="author-lastname" type="text" name="lastname" placeholder="Иванов" required>
           </p>
           <p class="author__item">
             <label class="author__name" for="author-surname">Отчество:</label>
-            <input  class="author__input" id="author-surname" type="text" name="surname" placeholder="Александрович">
+            <input class="author__input" id="author-surname" type="text" name="surname" placeholder="Александрович">
           </p>
         </fieldset>
         <fieldset class="form__field author-contacts">
           <legend>Контактная информация:</legend>
           <p class="author-contacts__item">
             <label class="author-contacts__phone" for="author-phone">Контактный телефон*:</label>
-            <input class="author-contacts__input" id="author-phone" type="tel" name="phone" placeholder="Введите телефон" required>
+            <input class="author-contacts__input" id="author-phone" type="tel" name="phone"
+              placeholder="Введите телефон" required>
           </p>
           <p class="author-contacts__item">
             <label class="author-contacts__email" for="author-email">Электронная почта*:</label>
-            <input class="author-contacts__input" id="author-email" type="email" name="email" placeholder="Введите e-mail" required>
+            <input class="author-contacts__input" id="author-email" type="email" name="email"
+              placeholder="Введите e-mail" required>
           </p>
         </fieldset>
         <fieldset class="form__field feeling">
@@ -112,7 +115,8 @@
         </fieldset>
         <p class="form__emotions emotions-text">
           <label class="emotions-text__label" for="impression">Опишите свои эмоции:</label>
-          <textarea class="emotions-text__input" name="impression" id="impression" cols="30" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
+          <textarea class="emotions-text__input" name="impression" id="impression" cols="30" rows="10"
+            placeholder="Опишите подробно все свои восторги "></textarea>
         </p>
         <button class="form__button button" type="submit">Отправить отзыв</button>
       </form>
@@ -146,8 +150,10 @@
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru">
           <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
-            </svg>
+            <path
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+              fill="black" />
+          </svg>
         </a>
       </div>
     </div>

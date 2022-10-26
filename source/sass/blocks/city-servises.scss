@@ -25,25 +25,25 @@
     background-image: url("../img/icon-house.svg");
   }
 
-  &--souvenirs::before {
-    content: "";
-    position: absolute;
-    width: 39px;
-    height: 37px;
-    top: 0;
-    left: 0;
-    background-image: url("../img/icon-house.svg");
-  }
+  // &--souvenirs::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 39px;
+  //   height: 37px;
+  //   top: 0;
+  //   left: 0;
+  //   background-image: url("../img/icon-house.svg");
+  // }
 
-  &--food::before {
-    content: "";
-    position: absolute;
-    width: 39px;
-    height: 37px;
-    top: 0;
-    left: 0;
-    background-image: url("../img/icon-house.svg");
-  }
+  // &--food::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 39px;
+  //   height: 37px;
+  //   top: 0;
+  //   left: 0;
+  //   background-image: url("../img/icon-house.svg");
+  // }
 }
 
 .city-servises__title {
@@ -54,7 +54,6 @@
 }
 
 .city-servises__description {
-  font-size: 14px;
   line-height: 21px;
   color: $darkgrey;
 }

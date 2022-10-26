@@ -1,6 +1,7 @@
 // .intro {
+
 // }
-.intro__wrapper {
+.intro__logo {
   width: 320px;
   height: 389px;
   background-color: $blue;
@@ -8,14 +9,21 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   text-align: center;
+
+  img {
+    margin-top: 90px;
+  }
 }
 
-.intro__img {
-  margin-top: 90px;
-}
-
-.intro__text {
+.intro__wrapper {
   text-align: center;
+}
+
+// .intro__logo {
+
+// }
+.intro__text {
+
   background-color: $white;
 }
 

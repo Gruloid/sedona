@@ -1,10 +1,18 @@
 // .booking {
 // }
-// .booking__wrapper {
-// }
-// .booking__title {
-// }
-// .booking__text {
-// }
-// .booking__button {
-// }
+.booking__wrapper {
+
+  text-align: center;
+}
+
+.booking__title {
+  margin-top: 33px;
+  font-weight: 700;
+  font-size: 21px;
+
+}
+
+.booking__text {
+  margin-bottom: 27px;
+  line-height: 24px;
+}
