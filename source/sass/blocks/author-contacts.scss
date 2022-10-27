@@ -1,0 +1,20 @@
+// .author-contacts {
+// }
+// .author-contacts__item {
+// }
+// .author-contacts__phone {
+// }
+// .author-contacts__email {
+// }
+.author-contacts__input {
+  background-color: $grey-input;
+  margin: 0;
+  border: 0;
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+  }
+}

@@ -1,0 +1,28 @@
+// .form {}
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__item {
+  border-bottom: 1px solid $grey;
+}
+
+.form__field {
+  border: 0;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.form__legend {
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: $black;
+}
+// .form__emotions {
+// }
+// .form__button {}

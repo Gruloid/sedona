@@ -50,75 +50,87 @@
     </section>
     <section class="review">
       <h2 class="visually-hidden">Форма отзыва</h2>
-      <form class="review__wrapper form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__field author">
-          <legend>Представьтесь:</legend>
-          <p class="author__item">
-            <label class="author__name" for="author-firstname">Имя*:</label>
-            <input class="author__input" id="author-firstname" type="text" name="firstname" placeholder="Петр" required>
-          </p>
-          <p class="author__item">
-            <label class="author__name" for="author-lastname">Фамилия*:</label>
-            <input class="author__input" id="author-lastname" type="text" name="lastname" placeholder="Иванов" required>
-          </p>
-          <p class="author__item">
-            <label class="author__name" for="author-surname">Отчество:</label>
-            <input class="author__input" id="author-surname" type="text" name="surname" placeholder="Александрович">
-          </p>
-        </fieldset>
-        <fieldset class="form__field author-contacts">
-          <legend>Контактная информация:</legend>
-          <p class="author-contacts__item">
-            <label class="author-contacts__phone" for="author-phone">Контактный телефон*:</label>
-            <input class="author-contacts__input" id="author-phone" type="tel" name="phone"
-              placeholder="Введите телефон" required>
-          </p>
-          <p class="author-contacts__item">
-            <label class="author-contacts__email" for="author-email">Электронная почта*:</label>
-            <input class="author-contacts__input" id="author-email" type="email" name="email"
-              placeholder="Введите e-mail" required>
-          </p>
-        </fieldset>
-        <fieldset class="form__field feeling">
-          <legend>Ваше общее впечатление:</legend>
-          <p class="feeling__item">
-            <input class="feeling__radio" id="rather-positive" type="radio" name="positiv" checked>
-            <label class="feeling__label" for="rather-positive">Скорее положительное</label>
-          </p>
-          <p class="feeling_item">
-            <input class="feeling__radio" id="rather-negative" type="radio" name="negativ">
-            <label class="feeling__label" for="rather-negative">Скорее отрицательное</label>
-          </p>
-          <p class="feeling__item">
-            <input class="feeling__radio" id="difficult" type="radio" name="difficult">
-            <label class="feeling__label" for="difficult">Затрудняюсь ответить</label>
-          </p>
-        </fieldset>
-        <fieldset class="form__field place">
-          <legend>посещенные достопримечательности:</legend>
-          <p class="place__item">
-            <input class="place__check" id="place-bridge" type="checkbox" name="bridge" checked>
-            <label class="place__label" for="place-bridge">Мост Дьявола</label>
-          </p>
-          <p class="place__item">
-            <input class="place__check" id="place-mount" type="checkbox" name="mount" checked>
-            <label class="place__label" for="place-mount">Гора-Колокол</label>
-          </p>
-          <p class="place__item">
-            <input class="place__check" id="place-park" type="checkbox" name="park" checked>
-            <label class="place__label" for="place-park">Слайд-парк</label>
-          </p>
-          <p class="place__item">
-            <input class="place__check" id="place-rock" type="checkbox" name="rock">
-            <label class="place__label" for="place-rock">Красные скалы</label>
-          </p>
-        </fieldset>
-        <p class="form__emotions emotions-text">
-          <label class="emotions-text__label" for="impression">Опишите свои эмоции:</label>
-          <textarea class="emotions-text__input" name="impression" id="impression" cols="30" rows="10"
+      <form class="form" method="post" action="https://echo.htmlacademy.ru">
+        <ul class="form__list">
+          <li class="form__item">
+            <fieldset class="form__field author">
+              <legend class="form__legend">Представьтесь:</legend>
+              <p class="author__item">
+                <label class="author__name" for="author-firstname">Имя*:</label>
+                <input class="author__input" id="author-firstname" type="text" name="firstname" placeholder="Петр"
+                  required>
+              </p>
+              <p class="author__item">
+                <label class="author__name" for="author-lastname">Фамилия*:</label>
+                <input class="author__input" id="author-lastname" type="text" name="lastname" placeholder="Иванов"
+                  required>
+              </p>
+              <p class="author__item">
+                <label class="author__name" for="author-surname">Отчество:</label>
+                <input class="author__input" id="author-surname" type="text" name="surname" placeholder="Александрович">
+              </p>
+            </fieldset>
+          </li>
+          <li class="form__item">
+            <fieldset class="form__field author-contacts">
+              <legend class="form__legend">Контактная информация:</legend>
+              <p class="author-contacts__item">
+                <label class="author-contacts__phone" for="author-phone">Контактный телефон*:</label>
+                <input class="author-contacts__input" id="author-phone" type="tel" name="phone"
+                  placeholder="Введите телефон" required>
+              </p>
+              <p class="author-contacts__item">
+                <label class="author-contacts__email" for="author-email">Электронная почта*:</label>
+                <input class="author-contacts__input" id="author-email" type="email" name="email"
+                  placeholder="Введите e-mail" required>
+              </p>
+            </fieldset>
+          </li>
+          <li class="form__item">
+            <fieldset class="form__field feeling">
+              <legend class="form__legend">Ваше общее впечатление:</legend>
+              <p class="feeling__item">
+                <input class="feeling__radio" id="rather-positive" type="radio" name="positiv" checked>
+                <label class="feeling__label" for="rather-positive">Скорее положительное</label>
+              </p>
+              <p class="feeling__item">
+                <input class="feeling__radio" id="rather-negative" type="radio" name="negativ">
+                <label class="feeling__label" for="rather-negative">Скорее отрицательное</label>
+              </p>
+              <p class="feeling__item">
+                <input class="feeling__radio" id="difficult" type="radio" name="difficult">
+                <label class="feeling__label" for="difficult">Затрудняюсь ответить</label>
+              </p>
+            </fieldset>
+          </li>
+          <li class="form__item">
+            <fieldset class="form__field place">
+              <legend class="form__legend">посещенные достопримечательности:</legend>
+              <p class="place__item">
+                <input class="place__check" id="place-bridge" type="checkbox" name="bridge" checked>
+                <label class="place__label" for="place-bridge">Мост Дьявола</label>
+              </p>
+              <p class="place__item">
+                <input class="place__check" id="place-mount" type="checkbox" name="mount" checked>
+                <label class="place__label" for="place-mount">Гора-Колокол</label>
+              </p>
+              <p class="place__item">
+                <input class="place__check" id="place-park" type="checkbox" name="park" checked>
+                <label class="place__label" for="place-park">Слайд-парк</label>
+              </p>
+              <p class="place__item">
+                <input class="place__check" id="place-rock" type="checkbox" name="rock">
+                <label class="place__label" for="place-rock">Красные скалы</label>
+              </p>
+            </fieldset>
+          </li>
+        </ul>
+        <p class="form__emotions emotions">
+          <label class="emotions__label" for="impression">Опишите свои эмоции:</label>
+          <textarea class="emotions__input" name="impression" id="impression" cols="30" rows="10"
             placeholder="Опишите подробно все свои восторги "></textarea>
         </p>
-        <button class="form__button button" type="submit">Отправить отзыв</button>
+        <button class="button form__button" type="submit">Отправить отзыв</button>
       </form>
     </section>
   </main>

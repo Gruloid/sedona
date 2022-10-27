@@ -1,8 +1,11 @@
 // Global
+
 @import "global/global.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
-// // Blocks
+
+// Blocks
+
 @import "blocks/page.scss";
 @import "blocks/advantages.scss";
 @import "blocks/booking.scss";
@@ -18,7 +21,13 @@
 @import "blocks/location.scss";
 @import "blocks/button.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/author.scss";
+@import "blocks/author-contacts.scss";
+@import "blocks/form.scss";
+@import "blocks/feeling.scss";
+@import "blocks/emotions.scss";
+@import "blocks/place.scss";
+@import "blocks/review.scss";
 @import "blocks/gallery.scss";
 @import "blocks/photo.scss";
 @import "blocks/video.scss";
-

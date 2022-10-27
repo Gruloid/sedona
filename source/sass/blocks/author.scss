@@ -1,0 +1,19 @@
+// .author {
+// }
+.author__item {
+  display: flex;
+}
+// .author__name {
+// }
+.author__input {
+  background-color: $grey-input;
+  margin: 0;
+  border: 0;
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+  }
+}

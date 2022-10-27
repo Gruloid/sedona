@@ -1,9 +1,8 @@
 .photo {
-margin-left: 20px;
-margin-right: 20px;
-display: flex;
-flex-direction: column;
-
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .photo__discription {
@@ -28,9 +27,11 @@ flex-direction: column;
   line-height: 24px;
   text-transform: none;
 }
+
 .photo__like {
   order: 4;
 }
+
 .photo__like-bottom {
   margin-bottom: 21px;
   background-color: $white;
