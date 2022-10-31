@@ -3,6 +3,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .form__item {
@@ -27,6 +31,15 @@
   text-align: center;
   color: $black;
 }
+
 // .form__emotions {
 // }
-// .form__button {}
+ .form__button {
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
+}

@@ -1,5 +1,11 @@
-// .place {
-// }
+.place {
+  @media (min-height: $tablet-width) {
+
+    order: 4;
+      grid-column: 1 / -1;
+      }
+
+}
 // .place__item {
 // }
 // .place__check {
@@ -9,4 +15,17 @@
   font-size: 18px;
   color: $black;
   text-transform: none;
+}
+
+.place__check-group {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+  }
 }

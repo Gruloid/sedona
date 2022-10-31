@@ -9,6 +9,8 @@
   background-color: $grey-input;
   margin: 0;
   border: 0;
+  width: 100%;
+  height: 160px;
 
   &::placeholder {
     font-weight: 700;

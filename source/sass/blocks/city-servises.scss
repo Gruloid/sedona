@@ -1,17 +1,23 @@
 .city-servises {
   background-color: $white;
+  grid-column: 1 / -1;
 }
 
 .city-servises__wrapper {
   position: relative;
   padding-top: 35px;
   padding-bottom: 35px;
+
 }
 
 .city-servises__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .city-servises__item {

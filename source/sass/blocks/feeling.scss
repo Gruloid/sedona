@@ -1,5 +1,8 @@
-// .feeling {
-// }
+.feeling {
+  @media (min-height: $tablet-width) {
+    order: 1;
+  }
+}
 // .feeling__item {
 // }
 // .feeling__radio {

@@ -1,18 +1,36 @@
 .page {
+
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
-  font-style: 14px;
+  font-size: 14px;
   line-height: 26px;
 }
 
 .page__body {
-  min-width: 320px;
-  min-height: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  color: $darkgrey;
+  background-color: $grey-bg;
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.page__wrapper {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  color: $darkgrey;
-  background-color: $white;
   text-transform: uppercase;
+  box-shadow: 0 5px 15px 0 rgba($black, 0.2);
+  @media (min-width: $tablet-width) {
+    // width: $tablet-width;
+    min-width: $tablet-width;
+  }
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+
 }
