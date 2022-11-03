@@ -7,6 +7,7 @@
   left: calc(50% - 51px);
 }
 .page-header__wrapper {
+  position: relative;
   @media (min-width: $tablet-width) {
     // display: flex;
 
