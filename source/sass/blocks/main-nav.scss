@@ -1,7 +1,26 @@
-// .main-nav {
-//   display: none;
-// }
-
-// .intro__menu {}
-
-// .intro__list {}
+.main-nav {
+  display: none;
+  position: relative;
+}
+.main-nav__open {
+position: absolute;
+width: 22px;
+height: 22px;
+bottom: 17px;
+right: 20px;
+background-image: url("../../img/icon-menu.svg");
+background-repeat: no-repeat;
+border: none;
+}
+.main-nav__close {
+  // display: none;
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  top: 17px;
+  right: 20px;
+  background-color: $blue;
+  background-image: url("../../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  border: none;
+  }

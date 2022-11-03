@@ -4,15 +4,22 @@
 
 .page-header__logo {
   position: absolute;
+  z-index: 10;
+ bottom: -35px;
   left: calc(50% - 51px);
 }
 .page-header__wrapper {
   position: relative;
-  @media (min-width: $tablet-width) {
-    // display: flex;
 
-    .main-nav__menu {
+padding-bottom: 56px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    .main-nav__open,
+    .main-nav__close {
       display: none;
+    }
+    .main-nav {
+    display: block;
     }
   }
 }

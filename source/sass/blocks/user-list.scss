@@ -5,7 +5,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 
@@ -20,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    border: none;
   }
 }
 
@@ -35,6 +37,10 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+
   }
 }
 
