@@ -1,5 +1,5 @@
 .main-nav {
-  display: none;
+
   position: relative;
 }
 .main-nav__open {
@@ -24,3 +24,9 @@ border: none;
   background-repeat: no-repeat;
   border: none;
   }
+.main-nav--closed {
+  display: none;
+}
+.main-nav--nojs {
+  display: block;
+}
