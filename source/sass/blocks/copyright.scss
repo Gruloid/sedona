@@ -1,9 +1,8 @@
 .copyright {
   display: flex;
   justify-content: center;
-  margin-bottom: 23px;
+  align-items: center;
 }
-
 .copyright__text {
   margin: 0;
   font-size: 14px;
@@ -11,7 +10,9 @@
 }
 
 .copyright__link {
-  margin-left: 12px;
+  display: block;
+  // margin-top: 12px;
+    margin-left: 12px;
 
   &:hover path,
   &:focus path {

@@ -1,33 +1,39 @@
-// .intro {
-//   width: 100%;
-// }
 .intro__logo {
   position: relative;
-  height: 389px;
+  //min-height: 381px;
   padding-top: 90px;
+  padding-bottom: 85px;
   background-color: $blue;
   text-align: center;
-  background: no-repeat center url("../../img/back-desktop.jpg");
+  background: no-repeat url("../../img/back-desktop.jpg");
   background-size: auto;
+  background-position: 50% calc(50% + 50px);
 
   @media (min-width: $tablet-width) {
-    height: 518px;
+    min-height: 518px;
     padding-top: 78px;
+    padding-bottom: 80px;
+    background-position: center;
   }
 }
+
 .intro__logo::before {
   content: "";
   position: absolute;
-  width: 100%;
+  // width: 100%;
   height: 57px;
   bottom: 0;
- left: 0;
-//right: 50%;
+  left: 0;
+  right: 0;
   background-image: url("../../img/intro-triangle.svg");
- background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
+  @media (max-width: $mobile-small-width) {
+    bottom: -1px;
+  }
 }
+
 .intro__logo img {
   @media (min-width: $tablet-width) {
     width: 460px;
@@ -36,29 +42,42 @@
 }
 
 .intro__wrapper {
+
 }
 
-// .intro__logo {
-
-// }
-.intro__text {
-  padding: 0 18px;
+.intro__text-wrapper {
+  // position: relative;
+  padding: 32px 30px 48px;
   text-align: center;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 124px;
+    padding: 32px 124px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 358px;
+    padding: 32px 358px 41px;
   }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 37px;
+  //   bottom: 0;
+  //   left: 0;
+  //   background-color: $blue;
+
+  //   background-image: url("../../img/white-bg.svg");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: auto;
+  // }
 }
 
-
 .intro__title {
-  margin-bottom: 0;
-  margin-top: 32px;
+  margin: 0;
+  margin-bottom: 32px;
+  // margin-top: 32px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -66,8 +85,8 @@
 }
 
 .intro__description {
-  margin-bottom: 0;
-  margin-top: 32px;
-  padding-bottom: 17px;
+  margin: 0;
+  // margin-top: 32px;
+  // margin-bottom: 0;
   line-height: 26px;
 }
