@@ -2,18 +2,30 @@
 
   position: relative;
 }
+
 .main-nav__open {
-position: absolute;
-width: 22px;
-height: 22px;
-bottom: 17px;
-right: 20px;
-background-image: url("../../img/icon-menu.svg");
-background-repeat: no-repeat;
-border: none;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  bottom: 17px;
+  right: 20px;
+  background-color: $white;
+  background-image: url("../../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 .main-nav__close {
-  // display: none;
   position: absolute;
   width: 23px;
   height: 22px;
@@ -23,10 +35,22 @@ border: none;
   background-image: url("../../img/icon-cross.svg");
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-nav--closed {
   display: none;
 }
+
 .main-nav--nojs {
   display: block;
 }
