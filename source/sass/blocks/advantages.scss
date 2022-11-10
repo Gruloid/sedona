@@ -6,62 +6,132 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: $mobile-only-width) {
+    br {
+      display: none;
+    }
   }
 }
 
 .advantages__item {
   text-align: center;
+  min-height: 256px;
 
   &--primary:nth-child(1) {
     position: relative;
-    height: 451px;
+    min-height: 471px;
     background-color: $blue;
     color: $white;
+
+    @media (min-width: $tablet-width) {
+      min-height: 0;
+      grid-column: 1 / -1;
+      height: 256px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     &::before {
       content: "";
-      height: 260px;
+      width: 100%;
+      min-height: 256px;
       position: absolute;
-      bottom: -2px;
-      left: 0;
+      bottom: 0;
       right: 0;
-    background: center no-repeat url("../../img/photo-city@1x-tablet.jpg");
+      background-image: url("../../img/photo-city@1x-tablet.jpg");
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: right;
 
-    }
-  }
-    &--primary:nth-child(3) {
-      position: relative;
-      height: 451px;
-      background-color: $blue;
-      color: $white;
-      &::before {
-        content: "";
-        height: 260px;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        right: 0;
-      background: center no-repeat url("../../img/photo-bridge@1x-tablet.jpg");
-
+      @media (min-width: $desktop-width) {
+        background-image: url("../../img/photo-city@1x-des.jpg");
       }
     }
+  }
+
+  &--primary:nth-child(3) {
+    position: relative;
+    min-height: 451px;
+    background-color: $blue;
+    color: $white;
+
+    @media (min-width: $tablet-width) {
+      min-height: 0;
+      grid-column: 1 / -1;
+      height: 256px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      min-height: 256px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url("../../img/photo-bridge@1x-tablet.jpg");
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: left;
+
+      @media (min-width: $desktop-width) {
+        background-image: url("../../img/photo-bridge@1x-des.jpg");
+      }
+    }
+  }
 
 
 
   &--secondary {
-    padding-top: 25px;
-    padding-bottom: 24px;
-    margin-left: 20px;
-    margin-right: 20px;
+    min-height: 167px;
+    padding: 25px 20px 24px;
     border-bottom: 1px solid $grey-border;
 
+    &:last-child {
+    border: none;
+    }
 
     @media (min-width: $tablet-width) {
       border: 0;
+      padding: 42px 32px;
+      min-height: 256px;
     }
   }
 }
+
+.advantages__item-wrapper {
+  padding: 35px 32px;
+}
+// .advantages__item-wrapper:nth-child(1) {
+//   padding-top: 55px;
+// }
+.advantages__item--primary:nth-child(1) .advantages__item-wrapper {
+  padding-top: 55px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 37px;
+    top: -14px;
+    left: 0;
+    background-image: url("../../img/white-bg-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+}
+.advantages__item--primary:nth-child(3) .advantages__item-wrapper {
+  grid-column: 3;
+}
+
 .advantages__title {
   margin: 0;
   font-size: 18px;

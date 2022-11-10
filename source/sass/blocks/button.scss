@@ -6,4 +6,16 @@
   color: $white;
   font-weight: 700;
   font-size: 21px;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+  &:active {
+    background-color: $blue-active;
+    color: rgba($white, 0.3);
+  }
+  &:disabled {
+    background-color: $grey;
+  }
 }
