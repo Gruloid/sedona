@@ -11,10 +11,12 @@
   &:focus {
     background-color: $blue-hover;
   }
+
   &:active {
     background-color: $blue-active;
     color: rgba($white, 0.3);
   }
+
   &:disabled {
     background-color: $grey;
   }

@@ -1,16 +1,17 @@
 .author {
   padding: 20px 20px 25px 20px;
+
   @media (min-width: $tablet-width) {
     order: 2;
     padding: 0;
   }
 }
+
 .author__item {
   display: flex;
   margin-left: 79px;
 }
-// .author__name {
-// }
+
 .author__input {
   background-color: $grey-input;
   margin: 0;
@@ -24,5 +25,4 @@
     line-height: 26px;
     color: $black;
   }
-
 }

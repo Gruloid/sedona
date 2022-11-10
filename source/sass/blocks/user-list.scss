@@ -23,36 +23,38 @@
     &:focus {
       background-color: $blue-hover;
     }
+
     &:active {
       background-color: $blue-active;
     }
   }
+
   @media (min-width: $tablet-width) {
     background-color: $white;
     border: none;
-
   }
 }
+
 .user-list__item--current .user-list__link {
   @media (min-width: $tablet-width) {
-  color: $grey-menu-activ;
-  &:hover,
-  &:focus {
-    color: $grey-menu-hover;
+    color: $grey-menu-activ;
+
+    &:hover,
+    &:focus {
+      color: $grey-menu-hover;
+    }
+
+    &:active {
+      color: rgba($grey-menu-activ, 0.3);
+    }
   }
-  &:active {
-  color: rgba($grey-menu-activ, 0.3);
-  }
-}
 }
 
-.user-list__item:nth-child(3){
+.user-list__item:nth-child(3) {
   @media (min-width: $tablet-width) {
-  margin-left: 120px;
+    margin-left: 120px;
   }
 }
-
-
 
 .user-list__link {
   display: block;
@@ -62,11 +64,13 @@
   cursor: pointer;
   border-top: 1px solid rgba($white, 0.2);
   border-bottom: 1px solid rgba($black, 0.2);
+
   @media (max-width: $mobile-only-width) {
     &:active {
-    opacity: 0.3;
+      opacity: 0.3;
     }
   }
+
   @media (min-width: $tablet-width) {
     color: $black;
     font-weight: 700;
@@ -74,18 +78,14 @@
     line-height: 26px;
     border: none;
     padding-top: 16px;
-  }
-}
 
-.user-list__link {
-  @media (min-width: $tablet-width) {
     &:hover,
     &:focus {
       color: $blue;
     }
+
     &:active {
       color: rgba($black, 0.3);
     }
   }
-
 }

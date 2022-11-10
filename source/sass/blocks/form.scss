@@ -3,6 +3,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,7 +14,7 @@
   border-bottom: 1px solid $grey;
 
   &:first-child {
-  border-top: 1px solid $grey;
+    border-top: 1px solid $grey;
   }
 }
 
@@ -32,13 +33,13 @@
   color: $black;
 }
 
-// .form__emotions {
-// }
- .form__button {
+.form__button {
   width: 100%;
+
   @media (min-width: $tablet-width) {
     width: 324px;
   }
+
   @media (min-width: $desktop-width) {
     width: 480px;
   }

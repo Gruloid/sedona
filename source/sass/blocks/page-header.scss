@@ -15,9 +15,11 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+
     &::after {
-    display: none;
+      display: none;
     }
+
     .main-nav__open,
     .main-nav__close {
       display: none;
@@ -27,6 +29,7 @@
       display: block;
     }
   }
+
   &::after {
     content: "";
     position: absolute;

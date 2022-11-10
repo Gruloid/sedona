@@ -1,9 +1,8 @@
-// .review {
-// }
 .review__wrapper {
   @media (min-width: $tablet-width) {
-  padding: 0 60px;
+    padding: 0 60px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0 120px;
   }

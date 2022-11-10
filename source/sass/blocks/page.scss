@@ -1,5 +1,4 @@
 .page {
-
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -11,10 +10,6 @@
   margin: 0;
   color: $darkgrey;
   background-color: $grey-bg;
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .page__wrapper {
@@ -25,12 +20,12 @@
   grid-template-rows: min-content 1fr min-content;
   text-transform: uppercase;
   box-shadow: 0 5px 15px 0 rgba($black, 0.2);
+
   @media (min-width: $tablet-width) {
-    // width: $tablet-width;
     min-width: $tablet-width;
   }
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
-
 }

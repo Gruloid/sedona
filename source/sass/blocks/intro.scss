@@ -1,11 +1,11 @@
 .intro__logo {
   position: relative;
-  //min-height: 381px;
   padding-top: 90px;
   padding-bottom: 85px;
   background-color: $blue;
   text-align: center;
-  background: no-repeat url("../../img/back-desktop.jpg");
+  background-image: url("../../img/back-desktop.jpg");
+  background-repeat: no-repeat;
   background-size: auto;
   background-position: 50% calc(50% + 50px);
 
@@ -20,7 +20,6 @@
 .intro__logo::before {
   content: "";
   position: absolute;
-  // width: 100%;
   height: 57px;
   bottom: 0;
   left: 0;
@@ -29,6 +28,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
+
   @media (max-width: $mobile-small-width) {
     bottom: -1px;
   }
@@ -41,12 +41,7 @@
   }
 }
 
-.intro__wrapper {
-
-}
-
 .intro__text-wrapper {
-  // position: relative;
   padding: 32px 30px 48px;
   text-align: center;
   background-color: $white;
@@ -58,26 +53,11 @@
   @media (min-width: $desktop-width) {
     padding: 32px 358px 41px;
   }
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 37px;
-  //   bottom: 0;
-  //   left: 0;
-  //   background-color: $blue;
-
-  //   background-image: url("../../img/white-bg.svg");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: auto;
-  // }
 }
 
 .intro__title {
   margin: 0;
   margin-bottom: 32px;
-  // margin-top: 32px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -86,7 +66,5 @@
 
 .intro__description {
   margin: 0;
-  // margin-top: 32px;
-  // margin-bottom: 0;
   line-height: 26px;
 }

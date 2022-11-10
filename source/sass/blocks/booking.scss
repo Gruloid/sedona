@@ -3,6 +3,7 @@
   text-align: center;
   min-height: 287px;
 }
+
 .booking__title {
   margin: 0;
   font-weight: 700;
@@ -16,6 +17,7 @@
 
 .booking__button {
   width: 280px;
+
   @media (min-width: $tablet-width) {
     width: 458px;
   }

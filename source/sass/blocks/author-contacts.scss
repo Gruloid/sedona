@@ -1,16 +1,10 @@
 .author-contacts {
   @media (min-height: $tablet-width) {
-
-order: 3;
-  grid-column: 1 / -1;
+    order: 3;
+    grid-column: 1 / -1;
   }
 }
-// .author-contacts__item {
-// }
-.author-contacts__phone {
-}
-// .author-contacts__email {
-// }
+
 .author-contacts__input {
   background-color: $grey-input;
   margin: 0;
@@ -24,10 +18,12 @@ order: 3;
     line-height: 26px;
     color: $black;
   }
+
   @media (min-width: $desktop-width) {
     width: 257px;
   }
 }
+
 .author-contacts__group {
   @media (min-width: $tablet-width) {
     display: grid;
