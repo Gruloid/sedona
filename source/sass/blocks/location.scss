@@ -1,18 +1,6 @@
-.location {
+.location__wrapper {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   height: 350px;
-  background: center no-repeat url("../../img/map_back_mobile.jpg");
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 350px;
-    background: no-repeat url("../../img/map-tablet.jpg");
-    background-position: 50% 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-    background: center no-repeat url("../../img/map-desktop.jpg");
-  }
+  background: center no-repeat url("../../img/big-map.jpg");
 }

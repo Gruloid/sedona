@@ -42,7 +42,7 @@
       bottom: 0;
       right: 0;
       background-image: url("../../img/photo-city@1x-tablet.jpg");
-      background-size: auto;
+      //background-size: auto;
       background-repeat: no-repeat;
       background-position: right;
 
@@ -74,7 +74,7 @@
       bottom: 0;
       left: 0;
       background-image: url("../../img/photo-bridge@1x-tablet.jpg");
-      background-size: auto;
+      //background-size: auto;
       background-repeat: no-repeat;
       background-position: left;
 
@@ -103,6 +103,14 @@
 
 .advantages__item-wrapper {
   padding: 35px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 56px;
+  }
 }
 
 .advantages__item--primary:nth-child(1) .advantages__item-wrapper {
@@ -133,8 +141,8 @@
 }
 
 .advantages__item--primary:nth-child(3) .advantages__item-wrapper {
-  grid-column: 3;
-  //padding: 35px 32px;
+  grid-column: 3 / 4;
+  min-height: 256px;
 }
 
 .advantages__title {
@@ -148,6 +156,9 @@
   &::before {
     counter-increment: advant;
     content: "— №" counter(advant) " —";
+  }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
   }
 }
 
