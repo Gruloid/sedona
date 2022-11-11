@@ -21,67 +21,81 @@
   min-height: 256px;
 
   &--primary:nth-child(1) {
-    position: relative;
+   // position: relative;
     min-height: 471px;
     background-color: $blue;
     color: $white;
-
+    display: flex;
+    flex-direction: column;
     @media (min-width: $tablet-width) {
       min-height: 0;
       grid-column: 1 / -1;
       height: 256px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 2fr;
     }
-
-    &::before {
-      content: "";
-      width: 100%;
+    .advantages__item-bg {
       min-height: 256px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      background-image: url("../../img/photo-city@1x-tablet.jpg");
-      //background-size: auto;
+      background-image: url("../../img/photo-city@1x-des.jpg");
       background-repeat: no-repeat;
-      background-position: right;
+     // background-position: 50% 100%;
 
-      @media (min-width: $desktop-width) {
-        background-image: url("../../img/photo-city@1x-des.jpg");
-      }
     }
+    // &::before {
+    //   content: "";
+    //   width: 100%;
+    //   min-height: 256px;
+    //   position: absolute;
+    //   bottom: 0;
+    //   right: 0;
+    //   background-image: url("../../img/photo-city@1x-tablet.jpg");
+    //   //background-size: auto;
+    //   background-repeat: no-repeat;
+    //   background-position: right;
+
+    //   @media (min-width: $desktop-width) {
+    //     background-image: url("../../img/photo-city@1x-des.jpg");
+    //   }
+    // }
   }
 
   &--primary:nth-child(3) {
-    position: relative;
+   // position: relative;
     min-height: 451px;
     background-color: $blue;
     color: $white;
-
+   display: flex;
+  flex-direction: column-reverse;
     @media (min-width: $tablet-width) {
       min-height: 0;
       grid-column: 1 / -1;
       height: 256px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 2fr 1fr;
     }
-
-    &::before {
-      content: "";
-      width: 100%;
+    .advantages__item-bg {
+      order: 1;
       min-height: 256px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-image: url("../../img/photo-bridge@1x-tablet.jpg");
-      //background-size: auto;
+      background-image: url("../../img/photo-bridge@1x-des.jpg");
       background-repeat: no-repeat;
-      background-position: left;
-
-      @media (min-width: $desktop-width) {
-        background-image: url("../../img/photo-bridge@1x-des.jpg");
-      }
+     // background-position: 50% 100%;
     }
+    // &::before {
+    //   content: "";
+    //   width: 100%;
+    //   min-height: 256px;
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   background-image: url("../../img/photo-bridge@1x-tablet.jpg");
+    //   //background-size: auto;
+    //   background-repeat: no-repeat;
+    //   background-position: left;
+
+    //   @media (min-width: $desktop-width) {
+    //     background-image: url("../../img/photo-bridge@1x-des.jpg");
+    //   }
+    // }
   }
 
   &--secondary {
@@ -103,6 +117,7 @@
 
 .advantages__item-wrapper {
   padding: 35px 20px;
+  margin-bottom: auto;
 
   @media (min-width: $tablet-width) {
     padding: 40px 32px;
@@ -141,8 +156,7 @@
 }
 
 .advantages__item--primary:nth-child(3) .advantages__item-wrapper {
-  grid-column: 3 / 4;
-  min-height: 256px;
+  order: 2;
 }
 
 .advantages__title {
@@ -167,8 +181,3 @@
   line-height: 21px;
 }
 
-.advantages__img {
-  width: 800px;
-  height: 256px;
-  object-fit: cover;
-}
