@@ -5,13 +5,16 @@
     }
   }
 }
+
 .booking__wrapper {
   padding: 35px 20px 49px;
   text-align: center;
   min-height: 287px;
+
   @media (min-width: $tablet-width) {
     padding: 58px 166px;
   }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 66px;
   }
@@ -30,6 +33,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 37px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 42px;
   }

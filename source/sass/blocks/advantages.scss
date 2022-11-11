@@ -4,6 +4,7 @@
   list-style: none;
   background-color: $lightgrey;
   counter-reset: advant;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -21,12 +22,13 @@
   min-height: 256px;
 
   &--primary:nth-child(1) {
-   // position: relative;
+    // position: relative;
     min-height: 471px;
     background-color: $blue;
     color: $white;
     display: flex;
     flex-direction: column;
+
     @media (min-width: $tablet-width) {
       min-height: 0;
       grid-column: 1 / -1;
@@ -34,13 +36,15 @@
       display: grid;
       grid-template-columns: 1fr 2fr;
     }
+
     .advantages__item-bg {
       min-height: 256px;
       background-image: url("../../img/photo-city@1x-des.jpg");
       background-repeat: no-repeat;
-     // background-position: 50% 100%;
-
+      background-position-x: 50%;
+      // background-position: 50% 100%;
     }
+
     // &::before {
     //   content: "";
     //   width: 100%;
@@ -60,12 +64,13 @@
   }
 
   &--primary:nth-child(3) {
-   // position: relative;
+    // position: relative;
     min-height: 451px;
     background-color: $blue;
     color: $white;
-   display: flex;
-  flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
+
     @media (min-width: $tablet-width) {
       min-height: 0;
       grid-column: 1 / -1;
@@ -73,13 +78,16 @@
       display: grid;
       grid-template-columns: 2fr 1fr;
     }
+
     .advantages__item-bg {
       order: 1;
       min-height: 256px;
       background-image: url("../../img/photo-bridge@1x-des.jpg");
       background-repeat: no-repeat;
-     // background-position: 50% 100%;
+      background-position-x: 50%;
+      // background-position: 50% 100%;
     }
+
     // &::before {
     //   content: "";
     //   width: 100%;
@@ -129,7 +137,6 @@
 }
 
 .advantages__item--primary:nth-child(1) .advantages__item-wrapper {
-
   @media (max-width: $mobile-only-width) {
     padding-top: 55px;
   }
@@ -167,10 +174,12 @@
 
 .advantages__number {
   line-height: 21px;
+
   &::before {
     counter-increment: advant;
     content: "— №" counter(advant) " —";
   }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
   }
@@ -180,4 +189,3 @@
   margin: 0;
   line-height: 21px;
 }
-

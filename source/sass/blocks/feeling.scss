@@ -1,12 +1,34 @@
 .feeling {
-  @media (min-height: $tablet-width) {
+  padding: 20px 20px 31px;
+
+  @media (min-width: $tablet-width) {
     order: 1;
+    padding: 0;
+  }
+
+  .form__legend {
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
   }
 }
-// .feeling__item {
-// }
-// .feeling__radio {
-// }
+
+.feeling__item {
+  margin: 0;
+  margin-bottom: 11px;
+  min-height: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .feeling__label {
   font-weight: 700;
   font-size: 18px;
@@ -14,5 +36,42 @@
   text-transform: none;
 }
 
-// .feeling_item {
-// }
+.feeling__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.feeling__radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.feeling__radio+label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 25px;
+  width: 48px;
+  height: 48px;
+  border: 12px solid $grey-input;
+  border-radius: 50%;
+  background-color: $grey-input;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feeling__radio:checked+label::before {
+  background-color: $darkgrey;
+}
+
+.feeling__radio:not(:disabled):not(:checked)+label:hover::before,
+.feeling__radio:focus+label::before {
+  background-color: $darkgrey;
+  border-color: $grey-input;
+}
+
+.feeling__radio:not(:disabled):active+label::before {
+  background-color: black;
+  opacity: 0.3;
+}

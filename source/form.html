@@ -12,13 +12,13 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-      <header class="page-header">
-        <div class="page-header__wrapper">
-          <a class="page-header__logo">
-            <img src="img/logotype-mobile.svg" width="102" height="84" alt="город Седона">
-          </a>
-          <nav class="main-nav main-nav--closed main-nav--nojs">
-            <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="город Седона">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
               <a class="user-list__link" href="index.html">Главная</a>
@@ -44,8 +44,8 @@
           <div class="intro__logo">
             <img src="img/text-index.svg" width="282" height="214" alt="Приветствие от города Седона">
           </div>
-          <div class="intro__text-wrapper">
-            <p class="intro__title">Оставьте свой отзыв</p>
+          <div class="intro__text-wrapper intro__text-wrapper--form">
+            <p class="intro__title intro__title--form">Оставьте свой отзыв</p>
             <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
               вами
               достопримечательностях</p>
@@ -80,9 +80,9 @@
               <li class="form__item author-contacts">
                 <fieldset class="form__field ">
                   <legend class="form__legend">Контактная информация:</legend>
-<div class="author-contacts__group">
+                  <div class="author-contacts__group">
                     <p class="author-contacts__item">
-                      <label class="author-contacts__phone" for="author-phone">Контактный телефон*:</label>
+                      <label class="author-contacts__phone" for="author-phone"><span class="author-contacts__phone--hide">Контактный</span> телефон*:</label>
                       <input class="author-contacts__input" id="author-phone" type="tel" name="phone"
                         placeholder="Введите телефон" required>
                     </p>
@@ -91,7 +91,7 @@
                       <input class="author-contacts__input" id="author-email" type="email" name="email"
                         placeholder="Введите e-mail" required>
                     </p>
-</div>
+                  </div>
                 </fieldset>
               </li>
               <li class="form__item feeling">
@@ -99,15 +99,16 @@
                   <legend class="form__legend">Ваше общее впечатление:</legend>
                   <div class="feeling__radio-group">
                     <p class="feeling__item">
-                      <input class="feeling__radio" id="rather-positive" type="radio" name="positiv" checked>
+                      <input class="feeling__radio" id="rather-positive" type="radio" name="rather" value="positiv">
                       <label class="feeling__label" for="rather-positive">Скорее положительное</label>
                     </p>
                     <p class="feeling__item">
-                      <input class="feeling__radio" id="rather-negative" type="radio" name="negativ">
+                      <input class="feeling__radio" id="rather-negative" type="radio" name="rather" value="negativ"
+                        checked>
                       <label class="feeling__label" for="rather-negative">Скорее отрицательное</label>
                     </p>
                     <p class="feeling__item">
-                      <input class="feeling__radio" id="difficult" type="radio" name="difficult">
+                      <input class="feeling__radio" id="difficult" type="radio" name="rather" value="difficult">
                       <label class="feeling__label" for="difficult">Затрудняюсь ответить</label>
                     </p>
                   </div>
@@ -115,7 +116,7 @@
               </li>
               <li class="form__item place">
                 <fieldset class="form__field">
-                  <legend class="form__legend">посещенные достопримечательности:</legend>
+                  <legend class="form__legend">посещенные<br> достопримечательности:</legend>
                   <div class="place__check-group">
                     <p class="place__item">
                       <input class="place__check" id="place-bridge" type="checkbox" name="bridge" checked>
@@ -136,12 +137,12 @@
                   </div>
                 </fieldset>
               </li>
+              <li class="form__emotions emotions">
+                <label class="emotions__label" for="impression">Опишите свои эмоции:</label>
+                <textarea class="emotions__input" name="impression" id="impression"
+                  placeholder="Опишите подробно все свои восторги"></textarea>
+              </li>
             </ul>
-            <p class="form__emotions emotions">
-              <label class="emotions__label" for="impression">Опишите свои эмоции:</label>
-              <textarea class="emotions__input" name="impression" id="impression"
-                placeholder="Опишите подробно все свои восторги "></textarea>
-            </p>
             <button class="button form__button" type="submit">Отправить отзыв</button>
           </form>
         </div>

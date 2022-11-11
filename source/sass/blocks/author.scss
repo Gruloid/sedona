@@ -4,20 +4,59 @@
   @media (min-width: $tablet-width) {
     order: 2;
     padding: 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $grey-border-form;
+    }
+  }
+
+  .form__legend{
+    margin-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
   }
 }
 
+
+.author__name {
+  align-self: center;
+}
+
 .author__item {
+  margin: 0;
   display: flex;
-  margin-left: 79px;
+  margin-bottom: 20px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
 }
 
 .author__input {
   background-color: $grey-input;
-  margin: 0;
+  margin-left: 20px;
   border: 0;
   width: 100%;
   height: 58px;
+  padding-left: 22px;
+
+  &:hover,
+  &:focus {
+    background-color: $grey;
+  }
+
+  &:active {
+    background-color: $white;
+    border: 4px solid $grey;
+  }
 
   &::placeholder {
     font-weight: 700;
