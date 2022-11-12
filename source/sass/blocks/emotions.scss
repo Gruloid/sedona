@@ -1,11 +1,11 @@
 .emotions {
-  padding: 25px 20px 0px;
+  padding: 25px 20px 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     order: 5;
     grid-column: 1 / -1;
-    padding: 44px 0px 0px;
+    padding: 44px 0 0;
   }
 }
 
@@ -19,7 +19,6 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-
     &::after {
       content: "";
       position: absolute;

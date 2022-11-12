@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     order: 4;
     grid-column: 1 / -1;
-    padding: 52px 0px 0px;
+    padding: 52px 0 0;
   }
 
   .form__legend {
@@ -16,7 +16,6 @@
       padding-left: 60px;
       padding-right: 60px;
     }
-
   }
 
   .form__field {
@@ -38,6 +37,7 @@
     margin-bottom: 32px;
     margin-left: 80px;
   }
+
   @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-bottom: 0;
@@ -70,13 +70,13 @@
   opacity: 0;
 }
 
-.place__check+label {
+.place__check + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.place__check+label::before {
+.place__check + label::before {
   content: "";
   display: inline-block;
   margin-right: 25px;
@@ -89,17 +89,17 @@
   background-repeat: no-repeat;
 }
 
-.place__check:checked+label::before {
+.place__check:checked + label::before {
   background-image: url("../../img/tick.svg");
 }
 
-.place__check:not(:disabled):not(:checked)+label:hover::before,
-.place__check:focus+label::before {
+.place__check:not(:disabled):not(:checked) + label:hover::before,
+.place__check:focus + label::before {
   background-color: $grey;
   border-color: $grey;
 }
 
-.place__check:not(:disabled):active+label::before {
-  background-color: black;
+.place__check:not(:disabled):active + label::before {
+  background-color: $black;
   opacity: 0.3;
 }

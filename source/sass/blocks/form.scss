@@ -16,6 +16,7 @@
   &:first-child {
     border-top: 1px solid $grey;
   }
+
   @media (min-width: $tablet-width) {
     border: 0;
 
@@ -46,8 +47,8 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
     width: 324px;
   }
 

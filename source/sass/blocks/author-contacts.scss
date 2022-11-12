@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     order: 3;
     grid-column: 1 / -1;
-    padding: 72px 0px 0px;
+    padding: 72px 0 0;
   }
 
   .form__legend {
@@ -18,10 +18,8 @@
   }
 
   .form__field {
-
     @media (min-width: $tablet-width) {
       border-top: 1px solid $grey-border-form;
-
     }
   }
 }
@@ -50,7 +48,6 @@
 
 .author-contacts__email {
   margin-left: 22px;
-
 }
 
 .author-contacts__input {
