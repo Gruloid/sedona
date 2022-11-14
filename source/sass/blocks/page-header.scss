@@ -7,7 +7,40 @@
   z-index: 10;
   bottom: -35px;
   left: calc(50% - 51px);
-}
+  &--mobile {
+    display: block;
+    left: calc(50% - 51px);
+  }
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--tablet {
+      display: block;
+      left: calc(50% - 51px);
+    }
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--desktop  {
+      display: block;
+     left: calc(50% - 94px);
+    }
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+  }
+  }
+
+
+
 
 .page-header__wrapper {
   position: relative;
