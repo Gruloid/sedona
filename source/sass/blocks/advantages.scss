@@ -43,6 +43,12 @@
       background-repeat: no-repeat;
       background-position-x: 50%;
       // background-position: 50% 100%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/photo-city@2x-des.jpg");
+       background-size: 800px;
+     //   background-position: 50% calc(50% + 50px);
+      }
     }
 
     // &::before {
@@ -86,6 +92,11 @@
       background-repeat: no-repeat;
       background-position-x: 50%;
       // background-position: 50% 100%;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/photo-bridge@2x-des.jpg");
+       background-size: 800px;
+     //   background-position: 50% calc(50% + 50px);
+      }
     }
 
     // &::before {

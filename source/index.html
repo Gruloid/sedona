@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 
@@ -14,14 +16,12 @@
   <div class="page__wrapper">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo page-header__logo--mobile" href="index.html">
+        <a class="page-header__logo page-header__logo" href="index.html">
+         <picture>
+          <source media="(min-width: 1200px)" width="187" height="97" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" width="102" height="84" srcset="img/logotype-tablet.svg">
           <img src="img/logotype-mobile.svg" width="102" height="84" alt="город Седона">
-        </a>
-        <a class="page-header__logo page-header__logo--tablet" href="index.html">
-          <img src="img/logotype-tablet.svg" width="102" height="84" alt="город Седона">
-        </a>
-        <a class="page-header__logo page-header__logo--desktop" href="index.html">
-          <img src="img/logotype-desktop.svg" width="187" height="97" alt="город Седона">
+        </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>

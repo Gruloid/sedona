@@ -1,8 +1,8 @@
 .photo {
   position: relative;
   // margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   // align-items: center;
   @media (min-width: $tablet-width) {}
 }
@@ -55,10 +55,18 @@
   margin-right: auto;
   }
 }
+// .photo picture {
+//   height: 280px;
 
+//   @media (min-width: $tablet-width) {
+//     height: 400px;
+//   }
+// }
 .photo__img {
-  background-color: red;
+//  overflow: auto;
+ // background-color: red;
   //order: 1;
+  display: block;
   width: 280px;
   height: 280px;
   //object-fit: contain;

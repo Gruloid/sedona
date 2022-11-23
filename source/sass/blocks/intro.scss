@@ -9,6 +9,12 @@
   background-size: auto;
   background-position: 50% calc(50% + 50px);
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-desktop@2x.jpg");
+    background-size: 1200px;
+    background-position: 50% calc(50% + 50px);
+  }
+
   @media (min-width: $tablet-width) {
     min-height: auto;  //518
     padding-top: 78px;

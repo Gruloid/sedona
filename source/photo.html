@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo page-header__logo--mobile" href="index.html">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="город Седона">
-        </a>
-        <a class="page-header__logo page-header__logo--tablet" href="index.html">
-          <img src="img/logotype-tablet.svg" width="102" height="84" alt="город Седона">
-        </a>
-        <a class="page-header__logo page-header__logo--desktop" href="index.html">
-          <img src="img/logotype-desktop.svg" width="187" height="97" alt="город Седона">
+        <a class="page-header__logo page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" width="187" height="97" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" width="102" height="84" srcset="img/logotype-tablet.svg">
+            <img src="img/logotype-mobile.svg" width="102" height="84" alt="город Седона">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
@@ -62,16 +62,21 @@
           <ul class="gallery__list">
             <li class="gallery__item">
               <figure class="gallery__content photo">
-                <!-- <a href=""> -->
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
                   <img class="photo__img" src="img/gallery/photo-1-mobile.jpg" width="280" height="280"
-                    alt="дорога уходящая к горизонту">
-                <!-- </a> -->
+                    srcset="img/gallery/photo-1-mobile@2x.jpg 2x" alt="дорога уходящая к горизонту">
+                </picture>
                 <div class="photo__descrition">
                   <figcaption class="photo__caption">неродные просторы</figcaption>
                   <p class="photo__author"><span>Автор фото: &#32;</span><a>Борис</a></p>
                   <div class="photo__like">
-                    <button class="photo__like-bottom"><svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    <button class="photo__like-bottom"><svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3"
+                          d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                          fill="black" />
                       </svg></button><span class="photo__like-counter">1350</span>
                   </div>
                 </div>
@@ -79,18 +84,24 @@
             </li>
             <li class="gallery__item">
               <figure class="gallery__content photo">
-                <!-- <a class="photo__a" href=""> -->
+
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
                   <img class="photo__img" src="img/gallery/photo-2-mobile.jpg" width="280" height="280"
-                    alt="Кактусы с цветами">
-                <!-- </a> -->
+                    srcset="img/gallery/photo-2-mobile@2x.jpg 2x" alt="Кактусы с цветами">
+                </picture>
+
                 <div class="photo__descrition">
                   <figcaption class="photo__caption">Местная растительность</figcaption>
                   <p class="photo__author"><span>Автор фото: &#32;</span><a>Сергей</a></p>
                   <div class="photo__like">
                     <button class="photo__like-bottom">
                       <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                        </svg>
+                        <path opacity="0.3"
+                          d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                          fill="black" />
+                      </svg>
                     </button>
                     <span class="photo__like-counter">143</span>
                   </div>
@@ -99,17 +110,24 @@
             </li>
             <li class="gallery__item">
               <figure class="gallery__content photo">
-<!--
-                <a href=""> -->
+
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
                   <img class="photo__img" src="img/gallery/photo-3-mobile.jpg" width="280" height="280"
-                    alt="Дорога в горном лесу">
-                <!-- </a> -->
+                    srcset="img/gallery/photo-3-mobile@2x.jpg 2x" alt="Дорога в горном лесу">
+                </picture>
+                <source>
+
                 <div class="photo__descrition">
                   <figcaption class="photo__caption">Дорога на север</figcaption>
                   <p class="photo__author"><span>Автор фото: &#32;</span><a>Петр</a></p>
                   <div class="photo__like">
-                    <button class="photo__like-bottom"><svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    <button class="photo__like-bottom"><svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3"
+                          d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                          fill="black" />
                       </svg></button><span class="photo__like-counter">96</span>
                   </div>
                 </div>
@@ -117,17 +135,24 @@
             </li>
             <li class="gallery__item">
               <figure class="gallery__content photo">
-                <!-- <a href=""> -->
+
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-mobile@2x.jpg 2x">
                   <img class="photo__img" src="img/gallery/photo-4-mobile.jpg" width="280" height="280"
-                    alt="Природный мост в каньоне">
-                <!-- </a> -->
+                    srcset="img/gallery/photo-4-desktop@2x.jpg 2x" alt="Природный мост в каньоне">
+                </picture>
+                <source media="(min-width: 768px)" srcset="img/gallery/photo-1-desktop.jpg">
+
                 <div class="photo__descrition">
                   <figcaption class="photo__caption">Мост дьявола</figcaption>
                   <p class="photo__author"><span>Автор фото: &#32;</span><a>Антон</a></p>
                   <div class="photo__like">
                     <button class="photo__like-bottom">
                       <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                        <path opacity="0.3"
+                          d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                          fill="black" />
                       </svg>
                     </button>
                     <span class="photo__like-counter">254</span>
